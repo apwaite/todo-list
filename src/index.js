@@ -1,1 +1,1 @@
-console.log("Index.js has loaded successfully!");
+console.log('Index.js has loaded successfully!');

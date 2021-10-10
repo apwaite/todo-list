@@ -19,13 +19,11 @@
   },
   "homepage": "https://github.com/apwaite/todo-list#readme",
   "devDependencies": {
-    "css-loader": "^6.4.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.24.2",
     "prettier": "2.4.1",
-    "style-loader": "^3.3.0",
     "webpack": "^5.56.0",
     "webpack-cli": "^4.8.0"
   },

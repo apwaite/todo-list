@@ -11,6 +11,10 @@ const renderNav = () => {
   existingProjects.classList.add('existing-projects');
   existingProjects.textContent = 'Existing Project Placeholder';
   links.appendChild(existingProjects);
+  const addNewProject = document.createElement('li');
+  addNewProject.classList.add('add-new-project');
+  addNewProject.textContent = 'Add New Project';
+  links.appendChild(addNewProject);
   return nav;
 };
 

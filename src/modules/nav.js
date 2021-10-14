@@ -7,7 +7,10 @@ const renderNav = () => {
   projectsTitle.classList.add('projects-title');
   projectsTitle.textContent = 'Projects';
   links.appendChild(projectsTitle);
-
+  const existingProjects = document.createElement('li');
+  existingProjects.classList.add('existing-projects');
+  existingProjects.textContent = 'Existing Project Placeholder';
+  links.appendChild(existingProjects);
   return nav;
 };
 

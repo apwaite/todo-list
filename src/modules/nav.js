@@ -1,3 +1,9 @@
+// TODO: add default project to nav
+
+// import newProject from './todos';
+
+// const defaultProject = newProject('');
+
 const renderNav = () => {
   const nav = document.createElement('nav');
   const links = document.createElement('ul');

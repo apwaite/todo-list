@@ -1,12 +1,22 @@
+console.log('todos connected!');
+
 // const projects = [];
 
-// const newProject = (title, description, dueDate, priority, notes) => ({
-//   title,
-//   description,
-//   dueDate,
-//   priority,
-//   notes,
-// });
+const newProject = (title, description, dueDate, priority, notes) => ({
+  title,
+  description,
+  dueDate,
+  priority,
+  notes,
+});
+
+const defaultProject = newProject(
+  'title',
+  'description',
+  'dueDate',
+  'priority',
+  'notes'
+);
 
 const renderTodos = () => {
   const todos = document.createElement('section');
@@ -14,4 +24,4 @@ const renderTodos = () => {
   return todos;
 };
 
-export default renderTodos;
+export { renderTodos, defaultProject };

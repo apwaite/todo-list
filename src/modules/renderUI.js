@@ -1,7 +1,8 @@
 // TODO: import UI elements
 import renderHeader from './header';
 import renderNav from './nav';
-import { renderTodos, defaultProject } from './todos';
+import renderTodos from './todos';
+import { projects, newProject, loadDefault } from './projects';
 
 // TODO: render UI
 
@@ -14,8 +15,7 @@ function renderUI() {
   // TODO: render Todo section
   content.appendChild(renderTodos());
   // TODO: add existing projects from localStorage to navigation section
-  // const todos = document.querySelector('main');
-  console.log(defaultProject);
+  loadDefault();
   // TODO: add Todos from localStorage (if any) to Todo section
 }
 

@@ -41,6 +41,11 @@ const loadDefault = () => {
   priority.textContent = `${defaultProject.priority}`;
   todos.appendChild(priority);
 
+  const notes = document.createElement('p');
+  notes.classList.add('todo-priority');
+  notes.textContent = `${defaultProject.notes}`;
+  todos.appendChild(notes);
+
   return todos;
 };
 

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@900&display=swap');
+@import url('//use.fontawesome.com/releases/v5.0.7/css/all.css');
+
+:root {
+  --heading-font: 'Roboto';
+  --main-font: 'Open Sans';
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+/* Content */
+
+#content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+
+h1,
+h2 {
+  font-family: var(--heading-font);
+}
+
+header {
+  display: flex;
+  background-color: coral;
+}
+
+/* Nav */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: cyan;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Main */
+
+.main {
+  display: flex;
+  background-color: lightgreen;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.todos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

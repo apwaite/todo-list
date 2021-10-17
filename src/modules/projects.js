@@ -26,6 +26,11 @@ const loadDefault = () => {
   title.textContent = `${defaultProject.title}`;
   todos.appendChild(title);
 
+  const description = document.createElement('p');
+  description.classList.add('todo-description');
+  description.textContent = `${defaultProject.description}`;
+  todos.appendChild(description);
+
   return todos;
 };
 

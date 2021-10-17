@@ -31,6 +31,11 @@ const loadDefault = () => {
   description.textContent = `${defaultProject.description}`;
   todos.appendChild(description);
 
+  const dueDate = document.createElement('p');
+  dueDate.classList.add('todo-dueDate');
+  dueDate.textContent = `${defaultProject.dueDate}`;
+  todos.appendChild(dueDate);
+
   return todos;
 };
 

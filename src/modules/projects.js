@@ -36,6 +36,11 @@ const loadDefault = () => {
   dueDate.textContent = `${defaultProject.dueDate}`;
   todos.appendChild(dueDate);
 
+  const priority = document.createElement('p');
+  priority.classList.add('todo-priority');
+  priority.textContent = `${defaultProject.priority}`;
+  todos.appendChild(priority);
+
   return todos;
 };
 

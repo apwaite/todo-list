@@ -22,6 +22,7 @@ function renderUI() {
   loadDefault();
   // TODO: add Todos from localStorage (if any) to Todo section
   // TODO: add footer to page
+  content.appendChild(renderFooter());
 }
 
 export default renderUI;

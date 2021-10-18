@@ -34,7 +34,8 @@ header {
 
 nav {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  line-height: 2;
   background-color: cyan;
 }
 
@@ -46,13 +47,39 @@ ul {
 
 .main {
   display: flex;
+  flex-direction: column;
   background-color: lightgreen;
   flex-grow: 1;
-  justify-content: center;
 }
 
 .todos {
   display: flex;
+  flex-grow: 1;
   justify-content: center;
+  padding: 2rem;
   flex-direction: column;
+  background-color: plum;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 0.6rem;
+}
+
+.fa-github {
+  margin-left: 0.5rem;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+  /* Main */
+
+  .main {
+    flex-direction: row;
+  }
 }

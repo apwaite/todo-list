@@ -1,9 +1,10 @@
 console.log('todos connected!');
 
 const renderTodos = () => {
-  // TODO: add some basic elements and display placeholder data
+  // TODO: create todo div
   const todos = document.createElement('div');
   todos.classList.add('todos');
+
   return todos;
 };
 

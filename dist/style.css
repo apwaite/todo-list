@@ -45,6 +45,11 @@ nav {
 
 ul {
   list-style-type: none;
+  padding: 0;
+}
+
+.links {
+  margin: 2rem;
 }
 
 /* Main */
@@ -85,5 +90,11 @@ footer {
 
   .main {
     flex-direction: row;
+  }
+
+  /* Nav */
+
+  nav {
+    padding: 1rem;
   }
 }

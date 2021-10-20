@@ -49,7 +49,7 @@ ul {
 }
 
 .links {
-  margin: 2rem;
+  margin: 1rem;
 }
 
 /* Main */
@@ -64,7 +64,7 @@ ul {
 .todos {
   display: flex;
   flex-grow: 1;
-  justify-content: center;
+  align-content: center;
   padding: 2rem;
   flex-direction: column;
   background-color: plum;

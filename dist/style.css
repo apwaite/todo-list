@@ -30,6 +30,10 @@ header {
   background-color: coral;
 }
 
+header h1 {
+  margin-left: 2rem;
+}
+
 /* Nav */
 
 nav {

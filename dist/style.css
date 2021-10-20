@@ -65,7 +65,7 @@ ul {
   display: flex;
   flex-grow: 1;
   align-content: center;
-  padding: 2rem;
+  padding: 1rem;
   flex-direction: column;
   background-color: plum;
 }
@@ -90,6 +90,10 @@ footer {
 
   .main {
     flex-direction: row;
+  }
+
+  .todos {
+    padding: 2rem;
   }
 
   /* Nav */

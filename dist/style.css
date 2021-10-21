@@ -4,6 +4,7 @@
 :root {
   --heading-font: 'Roboto';
   --main-font: 'Open Sans';
+  --header-bg-color: #212121;
 }
 
 body {
@@ -27,7 +28,7 @@ h2 {
 
 header {
   display: flex;
-  background-color: coral;
+  background-color: var(--header-bg-color);
 }
 
 header h1 {

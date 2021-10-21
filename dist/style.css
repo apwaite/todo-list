@@ -5,6 +5,7 @@
   --heading-font: 'Roboto';
   --main-font: 'Open Sans';
   --header-bg-color: #212121;
+  --nav-bg-color: #212121;
 }
 
 body {
@@ -41,7 +42,7 @@ nav {
   display: flex;
   flex-direction: column;
   line-height: 2;
-  background-color: cyan;
+  background-color: var(--nav-bg-color);
 }
 
 ul {

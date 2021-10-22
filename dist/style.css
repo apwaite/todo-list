@@ -7,6 +7,7 @@
   --header-bg-color: #212121;
   --nav-bg-color: #212121;
   --main-bg-color: #f5f5f5;
+  --footer-bg-color: #f5f5f5;
 }
 
 body {
@@ -79,6 +80,7 @@ footer {
   flex-direction: row;
   justify-content: center;
   font-size: 0.6rem;
+  background-color: var(--footer-bg-color);
 }
 
 .fa-github {

@@ -5,6 +5,7 @@
   --heading-font: 'Roboto';
   --main-font: 'Open Sans';
   --primary-font: #f5f5f5;
+  --secondary-font: #212121;
   --header-bg-color: #212121;
   --nav-bg-color: #212121;
   --main-bg-color: #f5f5f5;
@@ -68,6 +69,10 @@ li {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+}
+
+.todo-title {
+  color: var(--font-secondary);
 }
 
 .todos {

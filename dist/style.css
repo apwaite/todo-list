@@ -37,7 +37,7 @@ header {
 }
 
 header h1 {
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 /* Nav */
@@ -104,6 +104,12 @@ footer {
 
   .todos {
     padding: 2rem;
+  }
+
+  /* Header */
+
+  header h1 {
+    margin-left: 2rem;
   }
 
   /* Nav */

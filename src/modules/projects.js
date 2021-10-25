@@ -13,38 +13,44 @@ const newProject = (title, description, dueDate, priority, notes) => ({
 const defaultProject = newProject(
   'Title',
   'Description',
-  'dueDate',
+  'Due Date',
   'Priority',
   'Notes'
 );
 
+// const createProject = () => {};
+
 const loadDefault = () => {
   const todos = document.querySelector('.todos');
+
+  const todo = document.createElement('div');
+  todo.classList.add('todo');
+  todos.appendChild(todo);
 
   const title = document.createElement('h2');
   title.classList.add('todo-title');
   title.textContent = `${defaultProject.title}`;
-  todos.appendChild(title);
+  todo.appendChild(title);
 
   const description = document.createElement('p');
   description.classList.add('todo-description');
   description.textContent = `${defaultProject.description}`;
-  todos.appendChild(description);
+  todo.appendChild(description);
 
   const dueDate = document.createElement('p');
   dueDate.classList.add('todo-dueDate');
   dueDate.textContent = `${defaultProject.dueDate}`;
-  todos.appendChild(dueDate);
+  todo.appendChild(dueDate);
 
   const priority = document.createElement('p');
   priority.classList.add('todo-priority');
   priority.textContent = `${defaultProject.priority}`;
-  todos.appendChild(priority);
+  todo.appendChild(priority);
 
   const notes = document.createElement('p');
   notes.classList.add('todo-priority');
   notes.textContent = `${defaultProject.notes}`;
-  todos.appendChild(notes);
+  todo.appendChild(notes);
 
   return todos;
 };

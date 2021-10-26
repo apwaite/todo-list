@@ -4,6 +4,8 @@
 
 // const defaultProject = newProject('');
 
+// TODO: Add logic to Add New Project button
+
 const renderNav = () => {
   const nav = document.createElement('nav');
 

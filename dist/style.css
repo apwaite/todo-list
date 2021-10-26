@@ -70,6 +70,10 @@ li {
   color: var(--primary-font);
 }
 
+/* TODO: Make Add New Project button more obvious */
+.add-new-project {
+}
+
 /* Main */
 
 .main {
@@ -80,6 +84,7 @@ li {
 
 .todo {
   padding: 1rem;
+  border: 1px solid black;
 }
 
 .todo-title {
@@ -91,7 +96,6 @@ li {
   display: flex;
   flex-grow: 1;
   align-content: center;
-  /* padding: 1rem; */
   flex-direction: column;
   background-color: var(--main-bg-color);
 }

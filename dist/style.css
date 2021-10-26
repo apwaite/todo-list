@@ -91,7 +91,7 @@ li {
   display: flex;
   flex-grow: 1;
   align-content: center;
-  padding: 1rem;
+  /* padding: 1rem; */
   flex-direction: column;
   background-color: var(--main-bg-color);
 }
@@ -114,6 +114,18 @@ footer {
 /* Media Queries */
 
 @media screen and (min-width: 768px) {
+  /* Header */
+
+  header h1 {
+    margin-left: 2rem;
+  }
+
+  /* Nav */
+
+  nav {
+    padding: 1rem;
+  }
+
   /* Main */
 
   .main {
@@ -125,15 +137,7 @@ footer {
     line-height: 2;
   }
 
-  /* Header */
-
-  header h1 {
-    margin-left: 2rem;
-  }
-
-  /* Nav */
-
-  nav {
-    padding: 1rem;
+  .todo-title {
+    margin: 0;
   }
 }

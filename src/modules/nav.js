@@ -25,7 +25,7 @@ const renderNav = () => {
 
   const addNewProject = document.createElement('li');
   addNewProject.classList.add('add-new-project');
-  addNewProject.textContent = 'Add New Project';
+  addNewProject.textContent = '+ Add New Project';
   links.appendChild(addNewProject);
 
   return nav;

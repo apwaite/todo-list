@@ -71,11 +71,19 @@ li {
   color: var(--primary-font);
 }
 
-/* TODO: Make Add New Project button more obvious */
 .add-new-project {
   font-weight: 400;
+  transition: all 0.5s ease-in-out;
 }
 
+.add-new-project:hover {
+  -moz-transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+  transform: scale(1.1);
+  transform-origin: left;
+  font-weight: 900;
+  cursor: pointer;
+}
 /* Main */
 
 .main {

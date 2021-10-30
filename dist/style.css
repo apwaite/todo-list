@@ -71,15 +71,27 @@ li {
   color: var(--primary-font);
 }
 
+.exiting-projects {
+  transition: all 0.5s ease-in-out;
+}
+
+.existing-projects:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transform-origin: left;
+  cursor: pointer;
+}
+
 .add-new-project {
   font-weight: 400;
   transition: all 0.5s ease-in-out;
 }
 
 .add-new-project:hover {
-  -moz-transform: scale(1.25);
-  -webkit-transform: scale(1.25);
-  transform: scale(1.1);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
   transform-origin: left;
   font-weight: 900;
   cursor: pointer;
@@ -132,6 +144,10 @@ footer {
 
   header h1 {
     margin-left: 2rem;
+  }
+
+  .header-title {
+    margin-left: 1rem;
   }
 
   /* Nav */

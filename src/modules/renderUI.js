@@ -6,6 +6,8 @@ import renderTodos from './todos';
 import { loadDefault } from './projects';
 import renderFooter from './footer';
 
+// TODO: add Nav events
+
 // TODO: render UI
 
 function renderUI() {

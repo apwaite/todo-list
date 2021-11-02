@@ -5,8 +5,18 @@ import renderNav from './nav';
 import renderTodos from './todos';
 import { loadDefault } from './projects';
 import renderFooter from './footer';
+import newProjectForm from './new-project-form';
 
 // TODO: add Nav events
+function createNavEvents() {
+  const todos = document.querySelector('.todos');
+  const addNewProject = document.querySelector('.add-new-project');
+
+  addNewProject.addEventListener('click', () => {
+    console.log(todos);
+    todos.removeChild(todos.firstChild);
+  });
+}
 
 // TODO: render UI
 
@@ -25,6 +35,7 @@ function renderUI() {
   // TODO: add Todos from localStorage (if any) to Todo section
   // TODO: add footer to page
   content.appendChild(renderFooter());
+  createNavEvents();
 }
 
 export default renderUI;

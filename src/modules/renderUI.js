@@ -15,6 +15,7 @@ function createNavEvents() {
   addNewProject.addEventListener('click', () => {
     console.log(todos);
     todos.removeChild(todos.firstChild);
+    todos.appendChild(newProjectForm());
   });
 }
 

@@ -7,6 +7,10 @@ const newProjectForm = () => {
   projectName.textContent = 'Project Title:';
   form.appendChild(projectName);
 
+  const projectTitle = document.createElement('input');
+  projectTitle.classList.add('project-title');
+  form.appendChild(projectTitle);
+
   return form;
 };
 

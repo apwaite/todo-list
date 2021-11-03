@@ -11,6 +11,11 @@ const newProjectForm = () => {
   projectTitle.classList.add('project-title');
   form.appendChild(projectTitle);
 
+  const addNewBtn = document.createElement('button');
+  addNewBtn.classList.add('add-new-btn');
+  addNewBtn.textContent = 'Add New Project';
+  form.appendChild(addNewBtn);
+
   return form;
 };
 

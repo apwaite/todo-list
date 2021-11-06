@@ -13,7 +13,7 @@ const newProjectForm = () => {
 
   const addNewBtn = document.createElement('button');
   addNewBtn.classList.add('add-new-btn');
-  addNewBtn.textContent = 'Add New Project';
+  addNewBtn.textContent = 'Add';
   form.appendChild(addNewBtn);
 
   return form;

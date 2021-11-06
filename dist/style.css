@@ -127,7 +127,13 @@ li {
 .form {
   display: flex;
   flex-direction: column;
+  align-self: center;
+}
+
+.add-new-btn {
   width: 50%;
+  margin-top: 1rem;
+  align-self: center;
 }
 
 /* Footer */

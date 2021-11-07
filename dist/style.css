@@ -127,13 +127,15 @@ li {
 .form {
   display: flex;
   flex-direction: column;
-  align-self: center;
+}
+
+.project-input {
+  width: 50%;
 }
 
 .add-new-btn {
-  width: 50%;
+  width: 25%;
   margin-top: 1rem;
-  align-self: center;
 }
 
 /* Footer */

@@ -9,6 +9,7 @@ const newProjectForm = () => {
 
   const projectInput = document.createElement('input');
   projectInput.classList.add('project-input');
+  projectInput.placeholder = 'Enter project title...';
   form.appendChild(projectInput);
 
   const addNewBtn = document.createElement('button');

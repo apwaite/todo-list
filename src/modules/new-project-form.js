@@ -2,10 +2,10 @@ const newProjectForm = () => {
   const form = document.createElement('div');
   form.classList.add('form');
   // TODO: add new project form
-  const projectName = document.createElement('h3');
-  projectName.classList.add('project-name');
-  projectName.textContent = 'Project Title:';
-  form.appendChild(projectName);
+  const projectTitle = document.createElement('h3');
+  projectTitle.classList.add('project-title');
+  projectTitle.textContent = 'Project Title:';
+  form.appendChild(projectTitle);
 
   const projectInput = document.createElement('input');
   projectInput.classList.add('project-input');

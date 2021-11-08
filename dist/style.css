@@ -127,15 +127,19 @@ li {
 .form {
   display: flex;
   flex-direction: column;
+  margin-left: 1rem;
+  width: 50%;
+  min-width: 200px;
 }
 
 .project-input {
-  width: 50%;
+  width: 100%;
 }
 
 .add-new-btn {
-  width: 25%;
   margin-top: 1rem;
+  min-width: 50px;
+  max-width: 85px;
 }
 
 /* Footer */
@@ -186,5 +190,24 @@ footer {
 
   .todo-title {
     margin: 0;
+  }
+
+  /* Add New Project Form */
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    width: 50%;
+    background: green;
+  }
+
+  .project-input {
+    width: 50%;
+  }
+
+  .add-new-btn {
+    width: 25%;
+    margin-top: 1rem;
   }
 }

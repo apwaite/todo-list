@@ -156,6 +156,7 @@ footer {
 
 .fa-github {
   margin-left: 0.5rem;
+  color: var(--secondary-font);
 }
 
 /* Media Queries */

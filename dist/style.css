@@ -157,6 +157,14 @@ footer {
 .fa-github {
   margin-left: 0.5rem;
   color: var(--secondary-font);
+  transition: all 0.5s ease-in-out;
+}
+
+.fa-github:hover {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  transform-origin: left;
 }
 
 /* Media Queries */

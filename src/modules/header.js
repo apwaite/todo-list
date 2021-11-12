@@ -10,6 +10,11 @@ const renderHeader = () => {
   h1.innerText = 'Todo List';
   header.appendChild(h1);
 
+  const menu = document.createElement('ul');
+  menu.classList.add('menu');
+  menu.innerHTML = '<i class="fas fa-bars"></i>';
+  header.appendChild(menu);
+
   return header;
 };
 

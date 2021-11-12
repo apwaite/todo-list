@@ -37,6 +37,7 @@ h2 {
 
 header {
   display: flex;
+  flex-direction: row;
   background-color: var(--header-bg-color);
 }
 
@@ -44,10 +45,20 @@ header h1 {
   margin-left: 1rem;
 }
 
+.menu {
+  margin-left: auto;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
+.fa-bars {
+  color: var(--primary-font);
+}
+
 /* Nav */
 
 nav {
-  display: flex;
+  display: none;
   flex-direction: column;
   line-height: 2;
   border-top: 1px solid var(--border-primary);
@@ -180,9 +191,14 @@ footer {
     margin-left: 1rem;
   }
 
+  .menu {
+    display: none;
+  }
+
   /* Nav */
 
   nav {
+    display: flex;
     padding: 1rem;
   }
 

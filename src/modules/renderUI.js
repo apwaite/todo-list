@@ -12,10 +12,22 @@ function createNavEvents() {
   const todos = document.querySelector('.todos');
   const addNewProject = document.querySelector('.add-new-project');
 
+  const hamburgerMenu = document.querySelector('.menu');
+  const displayNav = document.querySelector('nav');
+
   addNewProject.addEventListener('click', () => {
     console.log(todos);
     todos.removeChild(todos.firstChild);
     todos.appendChild(newProjectForm());
+  });
+
+  hamburgerMenu.addEventListener('click', () => {
+    if (displayNav.style.display === 'none') {
+      displayNav.style.display = 'flex';
+      displayNav.classList.toggle('active');
+    } else {
+      displayNav.style.display = 'none';
+    }
   });
 }
 

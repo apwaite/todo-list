@@ -49,6 +49,15 @@ header h1 {
   margin-left: auto;
   margin-right: 1rem;
   font-size: 1.5rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu:active {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transform-origin: left;
+  cursor: pointer;
 }
 
 .fa-bars {

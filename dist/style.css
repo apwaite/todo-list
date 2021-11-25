@@ -166,6 +166,11 @@ footer {
   background-color: var(--footer-bg-color);
 }
 
+.emoji {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .fa-github {
   margin-left: 0.5rem;
   color: var(--secondary-font);

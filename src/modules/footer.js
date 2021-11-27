@@ -6,7 +6,7 @@ const renderFooter = () => {
   madeBy.innerText = 'Made with ';
   const emoji = document.createElement('p');
   emoji.classList.add('emoji');
-  emoji.innerText = '❤️ ';
+  emoji.innerHTML = '&#10084;&#65039';
   const name = document.createElement('p');
   name.classList.add('name');
   name.innerText = 'by Andrew';

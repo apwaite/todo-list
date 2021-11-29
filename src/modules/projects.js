@@ -13,7 +13,7 @@ const newProject = (title, description, dueDate, priority, notes) => ({
 const defaultProject = newProject(
   'Project Title',
   'Project Description',
-  'Due Date',
+  'Projec Due Date',
   'Priority',
   'Notes'
 );

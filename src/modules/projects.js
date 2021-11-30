@@ -27,10 +27,14 @@ const loadDefault = () => {
   todo.classList.add('todo');
   todos.appendChild(todo);
 
+  const titleDiv = document.createElement('div');
+  titleDiv.classList.add('todo-title');
+  todo.appendChild(titleDiv);
+
   const title = document.createElement('h2');
-  title.classList.add('todo-title');
+  title.classList.add('title');
   title.textContent = `${defaultProject.title}`;
-  todo.appendChild(title);
+  titleDiv.appendChild(title);
 
   const description = document.createElement('p');
   description.classList.add('todo-description');

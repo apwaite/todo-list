@@ -36,10 +36,14 @@ const loadDefault = () => {
   title.textContent = `${defaultProject.title}`;
   titleDiv.appendChild(title);
 
+  const descriptionDiv = document.createElement('div');
+  descriptionDiv.classList.add('todo-description');
+  todo.appendChild(descriptionDiv);
+
   const description = document.createElement('p');
-  description.classList.add('todo-description');
+  description.classList.add('description');
   description.textContent = `${defaultProject.description}`;
-  todo.appendChild(description);
+  descriptionDiv.appendChild(description);
 
   const dueDate = document.createElement('p');
   dueDate.classList.add('todo-dueDate');

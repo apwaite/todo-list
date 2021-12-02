@@ -118,6 +118,14 @@ li {
   border: 1px solid black;
 }
 
+.todos {
+  display: flex;
+  flex-grow: 1;
+  align-content: center;
+  flex-direction: column;
+  background-color: var(--primary-bg-color);
+}
+
 .todo-title {
   padding: 1rem;
   margin: 0;
@@ -129,12 +137,9 @@ li {
   color: var(--primary-font);
 }
 
-.todos {
-  display: flex;
-  flex-grow: 1;
-  align-content: center;
-  flex-direction: column;
-  background-color: var(--primary-bg-color);
+.todo-description {
+  padding: 1rem;
+  border-bottom: 1px solid black;
 }
 
 /* Add New Project Form */

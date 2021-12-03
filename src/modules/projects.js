@@ -46,11 +46,11 @@ const loadDefault = () => {
   descriptionDiv.appendChild(description);
 
   const dueDateDiv = document.createElement('div');
-  dueDateDiv.classList.add('todo-dueDate');
+  dueDateDiv.classList.add('todo-due-date');
   todo.appendChild(dueDateDiv);
 
   const dueDate = document.createElement('p');
-  dueDate.classList.add('dueDate');
+  dueDate.classList.add('due-date');
   dueDate.textContent = `${defaultProject.dueDate}`;
   dueDateDiv.appendChild(dueDate);
 

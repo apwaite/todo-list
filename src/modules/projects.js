@@ -13,7 +13,7 @@ const newProject = (title, description, dueDate, priority, notes) => ({
 const defaultProject = newProject(
   'Project Title',
   'Project Description',
-  'Projec Due Date',
+  'Project Due Date',
   'Priority',
   'Notes'
 );
@@ -45,10 +45,14 @@ const loadDefault = () => {
   description.textContent = `${defaultProject.description}`;
   descriptionDiv.appendChild(description);
 
+  const dueDateDiv = document.createElement('div');
+  dueDateDiv.classList.add('todo-dueDate');
+  todo.appendChild(dueDateDiv);
+
   const dueDate = document.createElement('p');
-  dueDate.classList.add('todo-dueDate');
+  dueDate.classList.add('dueDate');
   dueDate.textContent = `${defaultProject.dueDate}`;
-  todo.appendChild(dueDate);
+  dueDateDiv.appendChild(dueDate);
 
   const priority = document.createElement('p');
   priority.classList.add('todo-priority');

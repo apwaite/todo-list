@@ -2,7 +2,8 @@ console.log('projects connected!');
 
 const projects = [];
 
-const newProject = (title, description, dueDate, priority, notes) => ({
+const newProject = (id, title, description, dueDate, priority, notes) => ({
+  id,
   title,
   description,
   dueDate,
@@ -11,6 +12,7 @@ const newProject = (title, description, dueDate, priority, notes) => ({
 });
 
 const defaultProject = newProject(
+  1,
   'Project Title',
   'Project Description',
   'Project Due Date',
@@ -24,7 +26,7 @@ const loadDefault = () => {
   const todos = document.querySelector('.todos');
 
   const todo = document.createElement('div');
-  todo.classList.add('todo');
+  todo.classList.add('todo', `todo-${defaultProject.id}`);
   todos.appendChild(todo);
 
   const titleDiv = document.createElement('div');

@@ -2,11 +2,20 @@ console.log('projects connected!');
 
 const projects = [];
 
-const newProject = (id, title, description, dueDate, priority, notes) => ({
+const newProject = (
   id,
   title,
   description,
   dueDate,
+  completed,
+  priority,
+  notes
+) => ({
+  id,
+  title,
+  description,
+  dueDate,
+  completed,
   priority,
   notes,
 });
@@ -16,6 +25,7 @@ const defaultProject = newProject(
   'Project Title',
   'Project Description',
   'Project Due Date',
+  'Completed',
   'Priority',
   'Notes'
 );
@@ -55,6 +65,15 @@ const loadDefault = () => {
   dueDate.classList.add('due-date');
   dueDate.textContent = `${defaultProject.dueDate}`;
   dueDateDiv.appendChild(dueDate);
+
+  const completedDiv = document.createElement('div');
+  completedDiv.classList.add('todo-completed');
+  todo.appendChild(completedDiv);
+
+  const completed = document.createElement('p');
+  completed.classList.add('completed');
+  completed.textContent = `${defaultProject.completed}`;
+  completedDiv.appendChild(completed);
 
   const priority = document.createElement('p');
   priority.classList.add('todo-priority');

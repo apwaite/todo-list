@@ -75,10 +75,14 @@ const loadDefault = () => {
   completed.textContent = `${defaultProject.completed}`;
   completedDiv.appendChild(completed);
 
+  const priorityDiv = document.createElement('div');
+  priorityDiv.classList.add('todo-priority');
+  todo.appendChild(priorityDiv);
+
   const priority = document.createElement('p');
-  priority.classList.add('todo-priority');
+  priority.classList.add('priority');
   priority.textContent = `${defaultProject.priority}`;
-  todo.appendChild(priority);
+  priorityDiv.appendChild(priority);
 
   const notes = document.createElement('p');
   notes.classList.add('todo-priority');

@@ -152,6 +152,11 @@ li {
   border-bottom: 1px solid black;
 }
 
+.todo-priority {
+  padding: 1rem;
+  border-bottom: 1px solid black;
+}
+
 /* Add New Project Form */
 
 .form {

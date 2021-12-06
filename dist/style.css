@@ -157,6 +157,10 @@ li {
   border-bottom: 1px solid black;
 }
 
+.todo-notes {
+  padding: 1rem;
+}
+
 /* Add New Project Form */
 
 .form {

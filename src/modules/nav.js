@@ -4,9 +4,19 @@
 
 // const defaultProject = newProject('');
 
+import { defaultProject } from './projects';
+
+const createProject = () => {
+  const existingProjects = document.createElement('li');
+  existingProjects.classList.add(`${defaultProject[0]}`);
+  existingProjects.textContent = `${defaultProject[0]}`;
+
+  return existingProjects;
+};
+
 // TODO: Add logic to Add New Project button
 
-const renderNav = () => {
+const renderNav = (existingProjects) => {
   const nav = document.createElement('nav');
 
   const links = document.createElement('ul');

@@ -96,4 +96,4 @@ const loadDefault = () => {
   return todos;
 };
 
-export { projects, newProject, loadDefault };
+export { projects, defaultProject, loadDefault };

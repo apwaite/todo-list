@@ -28,10 +28,10 @@ const renderNav = (existingProjects) => {
   projectsTitle.textContent = 'Projects';
   links.appendChild(projectsTitle);
 
-  const existingProjects = document.createElement('li');
-  existingProjects.classList.add('existing-projects');
-  existingProjects.textContent = 'Existing Project Placeholder';
-  links.appendChild(existingProjects);
+  const placeholderProjects = document.createElement('li');
+  placeholderProjects.classList.add('existing-projects');
+  placeholderProjects.textContent = 'Existing Project Placeholder';
+  links.appendChild(placeholderProjects);
 
   const addNewProject = document.createElement('li');
   addNewProject.classList.add('add-new-project');

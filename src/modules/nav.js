@@ -1,9 +1,3 @@
-// TODO: add default project to nav
-
-// import newProject from './todos';
-
-// const defaultProject = newProject('');
-
 import { defaultProject } from './projects';
 
 const createProject = () => {
@@ -14,9 +8,8 @@ const createProject = () => {
   return existingProjects;
 };
 
-// TODO: Add logic to Add New Project button
-
-const renderNav = (existingProjects) => {
+// TODO: add default project to nav
+const renderNav = () => {
   const nav = document.createElement('nav');
 
   const links = document.createElement('ul');

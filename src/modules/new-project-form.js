@@ -1,3 +1,5 @@
+// TODO: Add logic to Add New Project button
+
 const newProjectForm = () => {
   const form = document.createElement('div');
   form.classList.add('form');

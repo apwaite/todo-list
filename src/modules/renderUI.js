@@ -35,13 +35,10 @@ function createNavEvents() {
 
 function renderUI() {
   const content = document.getElementById('content');
-  // TODO: render header section
   content.appendChild(renderHeader());
   content.appendChild(renderMain());
   const main = document.querySelector('.main');
-  // TODO: render navigation section
   main.appendChild(renderNav());
-  // TODO: render Todo section
   main.appendChild(renderTodos());
   // TODO: add existing projects from localStorage to navigation section
   loadDefault();

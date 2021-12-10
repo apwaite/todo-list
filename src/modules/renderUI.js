@@ -43,7 +43,6 @@ function renderUI() {
   // TODO: add existing projects from localStorage to navigation section
   loadDefault();
   // TODO: add Todos from localStorage (if any) to Todo section
-  // TODO: add footer to page
   content.appendChild(renderFooter());
   createNavEvents();
 }

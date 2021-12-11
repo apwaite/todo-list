@@ -3,7 +3,7 @@
 const newProjectForm = () => {
   const form = document.createElement('div');
   form.classList.add('form');
-  // TODO: add new project form
+
   const projectTitle = document.createElement('h3');
   projectTitle.classList.add('project-title');
   projectTitle.textContent = 'Project Title:';

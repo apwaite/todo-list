@@ -31,8 +31,6 @@ function createNavEvents() {
   });
 }
 
-// TODO: render UI
-
 function renderUI() {
   const content = document.getElementById('content');
   content.appendChild(renderHeader());

@@ -30,9 +30,4 @@ const newProjectForm = () => {
   return form;
 };
 
-// function newProjectForm() {
-//   renderProjectForm();
-//   newProjectButton();
-// }
-
 export default newProjectForm;

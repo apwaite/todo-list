@@ -1,5 +1,13 @@
 // TODO: Add logic to Add New Project button
 
+function newProjectButton() {
+  const button = document.querySelector('.add-new-btn');
+
+  button.addEventListener('click', () => {
+    console.log('Hi');
+  });
+}
+
 const newProjectForm = () => {
   const form = document.createElement('div');
   form.classList.add('form');
@@ -21,5 +29,10 @@ const newProjectForm = () => {
 
   return form;
 };
+
+// function newProjectForm() {
+//   renderProjectForm();
+//   newProjectButton();
+// }
 
 export default newProjectForm;

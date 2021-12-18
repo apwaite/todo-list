@@ -116,13 +116,17 @@ li {
 
 .todo {
   border: 1px solid black;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
 }
 
 .todos {
   display: flex;
   flex-grow: 1;
   align-content: center;
-  flex-direction: column;
+  flex-wrap: nowrap;
+  flex-direction: row;
   background-color: var(--primary-bg-color);
 }
 
@@ -137,10 +141,10 @@ li {
   color: var(--primary-font);
 }
 
-.todo-description {
+/* .todo-description {
   padding: 1rem;
   border-bottom: 1px solid black;
-}
+} */
 
 .todo-due-date {
   padding: 1rem;
@@ -157,9 +161,9 @@ li {
   border-bottom: 1px solid black;
 }
 
-.todo-notes {
+/* .todo-notes {
   padding: 1rem;
-}
+} */
 
 /* Add New Project Form */
 

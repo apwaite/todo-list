@@ -2,32 +2,20 @@ console.log('projects connected!');
 
 const projects = [];
 
-const newProject = (
+const newProject = (id, title, dueDate, completed, priority) => ({
   id,
   title,
-  description,
   dueDate,
   completed,
   priority,
-  notes
-) => ({
-  id,
-  title,
-  description,
-  dueDate,
-  completed,
-  priority,
-  notes,
 });
 
 const defaultProject = newProject(
   1,
-  'Project Title',
-  'Project Description',
-  'Project Due Date',
+  'TODO Title',
+  'TODO Due Date',
   'Completed',
-  'Priority',
-  'Notes'
+  'Priority'
 );
 
 // const createProject = () => {};
@@ -48,14 +36,14 @@ const loadDefault = () => {
   title.textContent = `${defaultProject.title}`;
   titleDiv.appendChild(title);
 
-  const descriptionDiv = document.createElement('div');
-  descriptionDiv.classList.add('todo-description');
-  todo.appendChild(descriptionDiv);
+  // const descriptionDiv = document.createElement('div');
+  // descriptionDiv.classList.add('todo-description');
+  // todo.appendChild(descriptionDiv);
 
-  const description = document.createElement('p');
-  description.classList.add('description');
-  description.textContent = `${defaultProject.description}`;
-  descriptionDiv.appendChild(description);
+  // const description = document.createElement('p');
+  // description.classList.add('description');
+  // description.textContent = `${defaultProject.description}`;
+  // descriptionDiv.appendChild(description);
 
   const dueDateDiv = document.createElement('div');
   dueDateDiv.classList.add('todo-due-date');
@@ -84,14 +72,14 @@ const loadDefault = () => {
   priority.textContent = `${defaultProject.priority}`;
   priorityDiv.appendChild(priority);
 
-  const notesDiv = document.createElement('div');
-  notesDiv.classList.add('todo-notes');
-  todo.appendChild(notesDiv);
+  // const notesDiv = document.createElement('div');
+  // notesDiv.classList.add('todo-notes');
+  // todo.appendChild(notesDiv);
 
-  const notes = document.createElement('p');
-  notes.classList.add('notes');
-  notes.textContent = `${defaultProject.notes}`;
-  notesDiv.appendChild(notes);
+  // const notes = document.createElement('p');
+  // notes.classList.add('notes');
+  // notes.textContent = `${defaultProject.notes}`;
+  // notesDiv.appendChild(notes);
 
   return todos;
 };

@@ -119,12 +119,11 @@ li {
   display: flex;
   align-content: center;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .todos {
-  display: flex;
   flex-grow: 1;
-  align-content: center;
   flex-wrap: nowrap;
   flex-direction: row;
   background-color: var(--primary-bg-color);
@@ -148,17 +147,14 @@ li {
 
 .todo-due-date {
   padding: 1rem;
-  border-bottom: 1px solid black;
 }
 
 .todo-completed {
   padding: 1rem;
-  border-bottom: 1px solid black;
 }
 
 .todo-priority {
   padding: 1rem;
-  border-bottom: 1px solid black;
 }
 
 /* .todo-notes {

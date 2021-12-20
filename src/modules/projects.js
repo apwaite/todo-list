@@ -31,7 +31,7 @@ const loadDefault = () => {
   titleDiv.classList.add('todo-title');
   todo.appendChild(titleDiv);
 
-  const title = document.createElement('h2');
+  const title = document.createElement('p');
   title.classList.add('title');
   title.textContent = `${defaultProject.title}`;
   titleDiv.appendChild(title);

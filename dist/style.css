@@ -130,7 +130,7 @@ li {
 }
 
 .todo-title {
-  padding: 1rem;
+  padding: 0.5rem;
   margin: 0;
 }
 
@@ -144,15 +144,15 @@ li {
 } */
 
 .todo-due-date {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .todo-completed {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .todo-priority {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 /* .todo-notes {

@@ -114,19 +114,19 @@ li {
   flex-grow: 1;
 }
 
-.todo {
-  border: 1px solid black;
-  display: flex;
-  align-content: center;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .todos {
   flex-grow: 1;
-  flex-wrap: nowrap;
-  flex-direction: row;
+  flex-direction: column;
   background-color: var(--primary-bg-color);
+}
+
+.todo {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  border: 1px solid black;
+  overflow-x: scroll;
 }
 
 .todo-title {
@@ -253,6 +253,18 @@ footer {
 
   .todo-title {
     margin: 0;
+  }
+
+  .todo-due-date {
+    padding: 1rem;
+  }
+
+  .todo-completed {
+    padding: 1rem;
+  }
+
+  .todo-priority {
+    padding: 1rem;
   }
 
   /* Add New Project Form */

@@ -124,9 +124,9 @@ li {
   display: flex;
   flex-direction: row;
   align-content: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   border: 1px solid black;
-  overflow-x: scroll;
+  /* overflow-x: scroll; */
 }
 
 .todo-title {
@@ -239,6 +239,10 @@ footer {
 
   .main {
     flex-direction: row;
+  }
+
+  .todo {
+    justify-content: space-between;
   }
 
   .todos {

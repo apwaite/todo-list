@@ -31,5 +31,3 @@ const newProjectForm = () => {
 };
 
 export default newProjectForm;
-
-// Holiday comment

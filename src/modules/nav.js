@@ -5,6 +5,8 @@ const createProject = () => {
   existingProjects.classList.add(`${defaultProject[0]}`);
   existingProjects.textContent = `${defaultProject[0]}`;
 
+  // TODO:
+
   return existingProjects;
 };
 

@@ -1,5 +1,7 @@
 import { defaultProject } from './projects';
 
+// TODO: store existing projects in array
+
 const createProject = () => {
   const existingProjects = document.createElement('li');
   existingProjects.classList.add(`${defaultProject[0]}`);

@@ -120,6 +120,8 @@ li {
   background-color: var(--primary-bg-color);
 }
 
+/* TODO: Fix todos alignment issue */
+
 .todo {
   display: flex;
   flex-direction: row;

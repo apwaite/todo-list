@@ -128,7 +128,6 @@ li {
   align-content: center;
   justify-content: space-evenly;
   border: 1px solid black;
-  /* overflow-x: scroll; */
 }
 
 .todo-title {

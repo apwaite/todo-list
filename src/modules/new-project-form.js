@@ -10,6 +10,9 @@
 
 const newProjectForm = () => {
   const form = document.createElement('div');
+
+  // TODO: store existing projects in array
+
   form.classList.add('form');
 
   const projectTitle = document.createElement('h3');

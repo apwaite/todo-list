@@ -1,13 +1,11 @@
 import { defaultProject } from './projects';
 
-// TODO: store existing projects in array
-
 const createProject = () => {
   const existingProjects = document.createElement('li');
   existingProjects.classList.add(`${defaultProject[0]}`);
   existingProjects.textContent = `${defaultProject[0]}`;
 
-  // TODO: render existing projects
+  // TODO: render existing projects from array
 
   return existingProjects;
 };

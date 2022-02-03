@@ -2,12 +2,13 @@ console.log('projects connected!');
 
 const projects = [];
 
-const newProject = (id, title, dueDate, completed, priority) => ({
+const newProject = (id, title, dueDate, completed, priority, remove) => ({
   id,
   title,
   dueDate,
   completed,
   priority,
+  remove,
 });
 
 const defaultProject = newProject(
@@ -15,7 +16,8 @@ const defaultProject = newProject(
   'TODO Title',
   'TODO Due Date',
   'Completed',
-  'Priority'
+  'Priority',
+  false
 );
 
 // const createProject = () => {};
@@ -71,6 +73,10 @@ const loadDefault = () => {
   priority.classList.add('priority');
   priority.textContent = `${defaultProject.priority}`;
   priorityDiv.appendChild(priority);
+
+  const removeTodoDiv = document.createElement('div');
+  removeTodoDiv.classList.add('todo-remove');
+  todo.appendChild(removeTodoDiv);
 
   return todos;
 };

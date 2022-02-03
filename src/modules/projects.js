@@ -78,6 +78,11 @@ const loadDefault = () => {
   removeTodoDiv.classList.add('todo-remove');
   todo.appendChild(removeTodoDiv);
 
+  const removeTodo = document.createElement('p');
+  removeTodo.classList.add('remove');
+  removeTodo.textContent = `${defaultProject.remove}`;
+  removeTodoDiv.appendChild(removeTodo);
+
   return todos;
 };
 

@@ -123,6 +123,7 @@ li {
 .todo {
   display: flex;
   flex-direction: row;
+  margin: 0.5rem;
   align-content: center;
   justify-content: space-evenly;
   border: 1px solid black;

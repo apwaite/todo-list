@@ -150,6 +150,10 @@ li {
   padding: 0.5rem;
 }
 
+.todo-remove {
+  padding: 0.5rem;
+}
+
 /* Add New Project Form */
 
 .form {

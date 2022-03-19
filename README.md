@@ -14,4 +14,6 @@
 
 1. Move into the appropriate directory and enter: "git clone https://github.com/apwaite/todo-list.git"
 
+2. Move into the cloned directory and type "npm init"
+
 ## Challenges

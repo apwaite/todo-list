@@ -12,4 +12,6 @@
 
 ## Installation Guide
 
+1. Move into the appropriate directory and enter: "git clone https://github.com/apwaite/todo-list.git"
+
 ## Challenges

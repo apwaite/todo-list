@@ -41,7 +41,7 @@ function createNavEvents() {
 
 function renderUI() {
   const content = document.getElementById('content');
-  const form = document.getElementById('new-project');
+  const form = document.getElementById('project-form');
   content.appendChild(renderHeader());
   content.appendChild(renderMain());
   const main = document.querySelector('.main');

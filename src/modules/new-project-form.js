@@ -8,12 +8,12 @@
 //   });
 // }
 
-const newProjectForm = () => {
+const renderProjectForm = () => {
   const form = document.createElement('div');
 
   // TODO: store existing projects in array
 
-  form.classList.add('form');
+  form.classList.add('add-new-project-form');
 
   const projectTitle = document.createElement('h3');
   projectTitle.classList.add('project-title');
@@ -33,4 +33,4 @@ const newProjectForm = () => {
   return form;
 };
 
-export default newProjectForm;
+export default renderProjectForm;

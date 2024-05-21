@@ -10,23 +10,26 @@ import renderProjectForm from './new-project-form';
 // TODO: add Nav events
 function createNavEvents() {
   const todos = document.querySelector('.todos');
-  const addNewProject = document
-    .querySelector('.add-new-project')
-    .addEventListerner('click', () => add);
+  const addNewProject = document.querySelector('.add-new-project');
   const hamburgerMenu = document.querySelector('.menu');
   const displayNav = document.querySelector('nav');
+  const form = document.getElementById('form-overlay');
 
-  // Add new project option on click and toggle on off
+  //
+  // addNewProject.addEventListener('click', () => {
+
+  //   // todos.removeChild(todos.firstChild);
+  //   // todos.appendChild(newProjectForm());
+  // });
+  // Add new project popup to toggle on and off on click
   addNewProject.addEventListener('click', () => {
-    console.log(todos);
-    if (addNewProject.style.display === 'none') {
-      addNewProject.style.display = 'flex';
+    console.log('Add new project button clicked!');
+    if (form.style.display === 'none') {
+      form.style.display = 'flex';
+      form.classList.toggle('active');
     } else {
-      addNewProject.style.display = 'none';
+      form.style.display = 'none';
     }
-
-    // todos.removeChild(todos.firstChild);
-    // todos.appendChild(newProjectForm());
   });
   // Add Hamburger menu on smaller displays and toggle it on/off
   hamburgerMenu.addEventListener('click', () => {
@@ -41,7 +44,7 @@ function createNavEvents() {
 
 function renderUI() {
   const content = document.getElementById('content');
-  const form = document.getElementById('new-project');
+  const form = document.getElementById('form-overlay');
   content.appendChild(renderHeader());
   content.appendChild(renderMain());
   const main = document.querySelector('.main');

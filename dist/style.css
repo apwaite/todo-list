@@ -311,7 +311,6 @@ footer {
   /* Add New Project Form */
 
   #form-overlay {
-    display: flex;
     display: none;
     width: max-content;
     width: 100vw;
@@ -321,6 +320,10 @@ footer {
     position: fixed;
     align-items: center;
     z-index: 1;
+  }
+
+  #form-overlay.show-overlay {
+    display: flex;
   }
 
   #form-overlay::before {

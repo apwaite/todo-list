@@ -24,12 +24,12 @@ function createNavEvents() {
   // Add new project popup to toggle on and off on click
   addNewProject.addEventListener('click', () => {
     console.log('Add new project button clicked!');
-    if (form.style.display === 'none') {
-      form.style.display = 'flex';
-      form.classList.toggle('active');
-    } else {
-      form.style.display = 'none';
-    }
+    form.classList.toggle('show-overlay');
+    // if (form.style.display === 'none') {
+    //   form.style.display = 'flex';
+    // } else {
+    //   form.style.display = 'none';
+    // }
   });
   // Add Hamburger menu on smaller displays and toggle it on/off
   hamburgerMenu.addEventListener('click', () => {

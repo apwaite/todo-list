@@ -115,7 +115,7 @@ li {
   padding: 2rem;
   background: var(--primary-bg-color);
   border-radius: 0.15rem;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid var(--border-secondary);
 }
 
 .add-new-project:hover {
@@ -228,7 +228,7 @@ li {
   margin: 0.5rem;
   align-content: center;
   justify-content: space-evenly;
-  border: 1px solid black;
+  border: 1px solid var(--border-secondary);
 }
 
 .todo-title {

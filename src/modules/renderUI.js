@@ -25,11 +25,6 @@ function createNavEvents() {
   addNewProject.addEventListener('click', () => {
     console.log('Add new project button clicked!');
     form.classList.toggle('show-overlay');
-    // if (form.style.display === 'none') {
-    //   form.style.display = 'flex';
-    // } else {
-    //   form.style.display = 'none';
-    // }
   });
   // Add Hamburger menu on smaller displays and toggle it on/off
   hamburgerMenu.addEventListener('click', () => {

@@ -11,9 +11,9 @@
 const renderProjectForm = () => {
   const form = document.createElement('div');
 
-  // TODO: store existing projects in array
+  form.classList.add('form', 'form-styling');
 
-  form.classList.add('form');
+  // TODO: Add close form button
 
   const projectTitle = document.createElement('h3');
   projectTitle.classList.add('project-title');
@@ -29,6 +29,8 @@ const renderProjectForm = () => {
   addNewBtn.classList.add('add-new-btn');
   addNewBtn.textContent = 'Add';
   form.appendChild(addNewBtn);
+
+  // TODO: Store contents of projectInput in an array
 
   return form;
 };

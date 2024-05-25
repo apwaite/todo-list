@@ -37,6 +37,16 @@ function createNavEvents() {
   });
 }
 
+function closeNewProjectForm() {
+  const closeBtn = document.querySelector('.close-form');
+  const form = document.getElementById('form-overlay');
+
+  closeBtn.addEventListener('click', () => {
+    console.log('Close new project button clicked!');
+    form.classList.toggle('show-overlay');
+  });
+}
+
 function renderUI() {
   const content = document.getElementById('content');
   const form = document.getElementById('form-overlay');
@@ -51,6 +61,7 @@ function renderUI() {
   content.appendChild(renderFooter());
   form.appendChild(renderProjectForm());
   createNavEvents();
+  closeNewProjectForm();
 }
 
 export default renderUI;

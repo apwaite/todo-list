@@ -5,7 +5,7 @@ import renderNav from './nav';
 import renderTodos from './todos';
 import { loadDefault, projects } from './projects';
 import renderFooter from './footer';
-import renderProjectForm from './new-project-form';
+import { closeNewProjectForm, renderProjectForm } from './newProjectForm';
 
 // TODO: add Nav events
 function createNavEvents() {
@@ -34,16 +34,6 @@ function createNavEvents() {
     } else {
       displayNav.style.display = 'none';
     }
-  });
-}
-
-function closeNewProjectForm() {
-  const closeBtn = document.querySelector('.close-form');
-  const form = document.getElementById('form-overlay');
-
-  closeBtn.addEventListener('click', () => {
-    console.log('Close new project button clicked!');
-    form.classList.toggle('show-overlay');
   });
 }
 

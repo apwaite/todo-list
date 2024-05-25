@@ -1,12 +1,14 @@
-// TODO: Add logic to Add New Project button
+function closeNewProjectForm() {
+  const closeBtn = document.querySelector('.close-form');
+  const form = document.getElementById('form-overlay');
+  const input = document.querySelector('.project-input');
 
-// function newProjectButton() {
-//   const button = document.querySelector('.add-new-btn');
-
-//   button.addEventListener('click', () => {
-//     console.log('Hi');
-//   });
-// }
+  closeBtn.addEventListener('click', () => {
+    console.log('Close new project button clicked!');
+    form.classList.toggle('show-overlay');
+    input.placeholder = 'Enter new project title...';
+  });
+}
 
 const renderProjectForm = () => {
   const form = document.createElement('div');
@@ -37,4 +39,4 @@ const renderProjectForm = () => {
   return form;
 };
 
-export default renderProjectForm;
+export { closeNewProjectForm, renderProjectForm };

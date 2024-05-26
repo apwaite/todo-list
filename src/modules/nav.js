@@ -10,6 +10,36 @@ const createProject = () => {
   return existingProjects;
 };
 
+// TODO: add Nav events
+function createNavEvents() {
+  const todos = document.querySelector('.todos');
+  const addNewProject = document.querySelector('.add-new-project');
+  const hamburgerMenu = document.querySelector('.menu');
+  const displayNav = document.querySelector('nav');
+  const form = document.getElementById('form-overlay');
+
+  //
+  // addNewProject.addEventListener('click', () => {
+
+  //   // todos.removeChild(todos.firstChild);
+  //   // todos.appendChild(newProjectForm());
+  // });
+  // Add new project popup to toggle on and off on click
+  addNewProject.addEventListener('click', () => {
+    console.log('Add new project button clicked!');
+    form.classList.toggle('show-overlay');
+  });
+  // Add Hamburger menu on smaller displays and toggle it on/off
+  hamburgerMenu.addEventListener('click', () => {
+    if (displayNav.style.display === 'none') {
+      displayNav.style.display = 'flex';
+      displayNav.classList.toggle('active');
+    } else {
+      displayNav.style.display = 'none';
+    }
+  });
+}
+
 // TODO: add default project to nav
 const renderNav = () => {
   const nav = document.createElement('nav');
@@ -36,4 +66,4 @@ const renderNav = () => {
   return nav;
 };
 
-export default renderNav;
+export { createNavEvents, renderNav };

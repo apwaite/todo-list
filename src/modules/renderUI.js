@@ -1,41 +1,11 @@
 // TODO: import UI elements
 import renderHeader from './header';
 import renderMain from './main';
-import renderNav from './nav';
+import { createNavEvents, renderNav } from './nav';
 import renderTodos from './todos';
 import { loadDefault, projects } from './projects';
 import renderFooter from './footer';
 import { closeNewProjectForm, renderProjectForm } from './newProjectForm';
-
-// TODO: add Nav events
-function createNavEvents() {
-  const todos = document.querySelector('.todos');
-  const addNewProject = document.querySelector('.add-new-project');
-  const hamburgerMenu = document.querySelector('.menu');
-  const displayNav = document.querySelector('nav');
-  const form = document.getElementById('form-overlay');
-
-  //
-  // addNewProject.addEventListener('click', () => {
-
-  //   // todos.removeChild(todos.firstChild);
-  //   // todos.appendChild(newProjectForm());
-  // });
-  // Add new project popup to toggle on and off on click
-  addNewProject.addEventListener('click', () => {
-    console.log('Add new project button clicked!');
-    form.classList.toggle('show-overlay');
-  });
-  // Add Hamburger menu on smaller displays and toggle it on/off
-  hamburgerMenu.addEventListener('click', () => {
-    if (displayNav.style.display === 'none') {
-      displayNav.style.display = 'flex';
-      displayNav.classList.toggle('active');
-    } else {
-      displayNav.style.display = 'none';
-    }
-  });
-}
 
 function renderUI() {
   const content = document.getElementById('content');

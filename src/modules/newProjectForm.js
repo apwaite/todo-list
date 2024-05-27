@@ -1,14 +1,18 @@
-function closeNewProjectForm() {
+const closeProjectForm = () => {
   const closeBtn = document.querySelector('.close-form');
   const form = document.getElementById('form-overlay');
   const input = document.querySelector('.project-input');
 
-  closeBtn.addEventListener('click', () => {
-    console.log('Close new project button clicked!');
-    form.classList.toggle('show-overlay');
-    input.placeholder = 'Enter new project title...';
-  });
-}
+  if (closeBtn && form) {
+    closeBtn.addEventListener('click', () => {
+      console.log('Close new project button clicked!');
+      form.classList.toggle('show-overlay');
+      input.placeholder = 'Enter new project title...';
+    });
+  } else {
+    console.error('Close button or form not found!');
+  }
+};
 
 const renderProjectForm = () => {
   const form = document.createElement('div');
@@ -26,7 +30,7 @@ const renderProjectForm = () => {
 
   const projectInput = document.createElement('input');
   projectInput.classList.add('project-input');
-  projectInput.placeholder = 'Enter new project title...';
+  projectInput.placeholder = 'Enter project title...';
   form.appendChild(projectInput);
 
   const addNewBtn = document.createElement('button');
@@ -39,4 +43,4 @@ const renderProjectForm = () => {
   return form;
 };
 
-export { closeNewProjectForm, renderProjectForm };
+export { closeProjectForm, renderProjectForm };

@@ -1,16 +1,16 @@
-import { defaultProject } from './projects';
+// import { defaultProject } from './projects';
 
-const createProject = () => {
-  const existingProjects = document.createElement('li');
-  existingProjects.classList.add(`${defaultProject[0]}`);
-  existingProjects.textContent = `${defaultProject[0]}`;
+// const createProject = () => {
+//   const existingProjects = document.createElement('li');
+//   existingProjects.classList.add(`${defaultProject[0]}`);
+//   existingProjects.textContent = `${defaultProject[0]}`;
 
-  // TODO: render existing projects from array
+//   // TODO: render existing projects from array
 
-  return existingProjects;
-};
+//   return existingProjects;
+// };
 
-const addProjectBtn = () => {
+const addNewProjectBtn = () => {
   const addProject = document.querySelector('.add-new-project');
   const form = document.getElementById('form-overlay');
 
@@ -21,24 +21,6 @@ const addProjectBtn = () => {
     });
   } else {
     console.error('Add Project button or form not found!');
-  }
-};
-
-const hamburgerMenu = () => {
-  const menu = document.querySelector('menu');
-  const displayNav = document.querySelector('nav');
-
-  if (menu && displayNav) {
-    displayNav.addEventListener('click', () => {
-      if (displayNav.style.display === 'none') {
-        displayNav.style.display = 'flex';
-        displayNav.classList.toggle('active');
-      } else {
-        displayNav.style.display = 'none';
-      }
-    });
-  } else {
-    console.error('Hamburger menu or navigation display not found!');
   }
 };
 
@@ -67,4 +49,4 @@ const renderNav = () => {
   return nav;
 };
 
-export { addProjectBtn, hamburgerMenu, renderNav };
+export { addNewProjectBtn, renderNav };

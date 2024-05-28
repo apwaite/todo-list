@@ -3,9 +3,13 @@ import { hamburgerMenu, renderHeader } from './header';
 import renderMain from './main';
 import { addNewProjectBtn, renderNav } from './nav';
 import renderTodos from './todos';
-import { loadDefault, projects } from './projects';
+import { projects, loadDefault } from './projects';
 import renderFooter from './footer';
-import { closeProjectForm, renderProjectForm } from './newProjectForm';
+import {
+  closeProjectForm,
+  addProjectBtn,
+  renderProjectForm,
+} from './newProjectForm';
 
 function renderUI() {
   // Append rendered elements to DOM
@@ -24,11 +28,13 @@ function renderUI() {
   // Add event listeners
   addNewProjectBtn();
   hamburgerMenu();
+  addProjectBtn();
   closeProjectForm();
-  // addProjectBtn();
 
-  // Load existing projects from localStorage
+  // Load placeholder projects from projects.js
   loadDefault();
+
+  // TOD: Load existing projects from localStorage
 }
 
 export default renderUI;

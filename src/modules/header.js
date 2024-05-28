@@ -1,3 +1,21 @@
+const hamburgerMenu = () => {
+  const menu = document.querySelector('.menu');
+  const displayNav = document.querySelector('nav');
+
+  if (menu && displayNav) {
+    menu.addEventListener('click', () => {
+      if (displayNav.style.display === 'none') {
+        displayNav.style.display = 'flex';
+        displayNav.classList.toggle('active');
+      } else {
+        displayNav.style.display = 'none';
+      }
+    });
+  } else {
+    console.error('Hamburger menu or navigation display not found!');
+  }
+};
+
 const renderHeader = () => {
   const header = document.createElement('header');
 
@@ -18,4 +36,4 @@ const renderHeader = () => {
   return header;
 };
 
-export default renderHeader;
+export { hamburgerMenu, renderHeader };

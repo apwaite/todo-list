@@ -1,11 +1,11 @@
 // TODO: import UI elements
-import renderHeader from './header';
+import { hamburgerMenu, renderHeader } from './header';
 import renderMain from './main';
-import { addProjectBtn, hamburgerMenu, renderNav } from './nav';
+import { addNewProjectBtn, renderNav } from './nav';
 import renderTodos from './todos';
 import { loadDefault, projects } from './projects';
 import renderFooter from './footer';
-import { closeNewProjectForm, renderProjectForm } from './newProjectForm';
+import { closeProjectForm, renderProjectForm } from './newProjectForm';
 
 function renderUI() {
   // Append rendered elements to DOM
@@ -22,9 +22,10 @@ function renderUI() {
   form.appendChild(renderProjectForm());
 
   // Add event listeners
-  addProjectBtn();
+  addNewProjectBtn();
   hamburgerMenu();
-  closeNewProjectForm();
+  closeProjectForm();
+  // addProjectBtn();
 
   // Load existing projects from localStorage
   loadDefault();

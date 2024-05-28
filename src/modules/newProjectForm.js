@@ -14,31 +14,56 @@ const closeProjectForm = () => {
   }
 };
 
+// TODO: Add new project from input field
+// const addProjectBtn = () => {
+//   const addBtn = document.querySelector('add-new-btn');
+//   const input = document.querySelector('.project-input');
+//   const projects = [];
+
+//   if (addBtn && input) {
+//     addBtn.addEventListener('click', () => {
+//       // Take input value and trim any excess whitespace
+//       const projectName = input.value.trim();
+//       // Check whether input is empty
+//       if (projectName) {
+//         projects.push(projectName);
+//         console.log('Project added: ', projectName);
+//         console.log('Current projects: ', projects);
+//       } else {
+//         console.error('Project name cannot be empty');
+//       }
+//     });
+//   } else {
+//     console.error('Add button or close button not found!');
+//   }
+// };
+
 const renderProjectForm = () => {
   const form = document.createElement('div');
   form.classList.add('form', 'form-styling');
 
-  const projectTitle = document.createElement('h3');
-  projectTitle.classList.add('project-title');
-  projectTitle.textContent = 'Project Title:';
-  form.appendChild(projectTitle);
+  const title = document.createElement('h3');
+  title.classList.add('project-title');
+  title.textContent = 'Project Title:';
+  form.appendChild(title);
 
-  const projectClose = document.createElement('span');
-  projectClose.classList.add('close-form');
-  projectClose.textContent = 'x';
-  form.appendChild(projectClose);
+  const close = document.createElement('span');
+  close.classList.add('close-form');
+  close.textContent = 'x';
+  form.appendChild(close);
 
-  const projectInput = document.createElement('input');
-  projectInput.classList.add('project-input');
-  projectInput.placeholder = 'Enter project title...';
-  form.appendChild(projectInput);
+  const input = document.createElement('input');
+  input.classList.add('project-input');
+  input.type = 'text';
+  input.placeholder = 'Enter project title...';
+  form.appendChild(input);
 
-  const addNewBtn = document.createElement('button');
-  addNewBtn.classList.add('add-new-btn');
-  addNewBtn.textContent = 'Add';
-  form.appendChild(addNewBtn);
+  const addBtn = document.createElement('button');
+  addBtn.classList.add('add-new-btn');
+  addBtn.textContent = 'Add';
+  form.appendChild(addBtn);
 
-  // TODO: Store contents of projectInput in an array
+  // TODO: Store contents of input in an array
 
   return form;
 };

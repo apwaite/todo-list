@@ -2,6 +2,16 @@ console.log('projects connected!');
 
 const projects = [];
 
+const addProject = (projectName) => {
+  if (projectName) {
+    projects.push(projectName);
+    console.log('Project added: ', projectName);
+    console.log('Current projects: ', projects);
+  } else {
+    console.error('Project name cannot be empty.');
+  }
+};
+
 const newProject = (id, title, dueDate, completed, priority, remove) => ({
   id,
   title,
@@ -86,4 +96,4 @@ const loadDefault = () => {
   return todos;
 };
 
-export { projects, defaultProject, loadDefault };
+export { projects, addProject, loadDefault };

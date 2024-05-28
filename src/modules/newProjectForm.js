@@ -1,3 +1,5 @@
+import { addProject } from './projects';
+
 const closeProjectForm = () => {
   const closeBtn = document.querySelector('.close-form');
   const form = document.getElementById('form-overlay');
@@ -15,28 +17,20 @@ const closeProjectForm = () => {
 };
 
 // TODO: Add new project from input field
-// const addProjectBtn = () => {
-//   const addBtn = document.querySelector('add-new-btn');
-//   const input = document.querySelector('.project-input');
-//   const projects = [];
+const addProjectBtn = () => {
+  const addBtn = document.querySelector('.add-new-btn');
+  const input = document.querySelector('.project-input');
 
-//   if (addBtn && input) {
-//     addBtn.addEventListener('click', () => {
-//       // Take input value and trim any excess whitespace
-//       const projectName = input.value.trim();
-//       // Check whether input is empty
-//       if (projectName) {
-//         projects.push(projectName);
-//         console.log('Project added: ', projectName);
-//         console.log('Current projects: ', projects);
-//       } else {
-//         console.error('Project name cannot be empty');
-//       }
-//     });
-//   } else {
-//     console.error('Add button or close button not found!');
-//   }
-// };
+  if (addBtn && input) {
+    addBtn.addEventListener('click', () => {
+      // Take input value and trim any excess whitespace
+      const projectName = input.value.trim();
+      addProject(projectName);
+    });
+  } else {
+    console.error('Add button or project input not found!');
+  }
+};
 
 const renderProjectForm = () => {
   const form = document.createElement('div');
@@ -68,4 +62,4 @@ const renderProjectForm = () => {
   return form;
 };
 
-export { closeProjectForm, renderProjectForm };
+export { closeProjectForm, addProjectBtn, renderProjectForm };

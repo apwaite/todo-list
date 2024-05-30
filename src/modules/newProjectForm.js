@@ -16,7 +16,6 @@ const closeProjectForm = () => {
   }
 };
 
-// TODO: Add new project from input field
 const addProjectBtn = () => {
   const addBtn = document.querySelector('.add-new-btn');
   const input = document.querySelector('.project-input');
@@ -31,6 +30,8 @@ const addProjectBtn = () => {
     console.error('Add button or project input not found!');
   }
 };
+
+// TODO: Clear new project input field
 
 const renderProjectForm = () => {
   const form = document.createElement('div');

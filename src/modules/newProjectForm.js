@@ -25,13 +25,14 @@ const addProjectBtn = () => {
       // Take input value and trim any excess whitespace
       const projectName = input.value.trim();
       addProject(projectName);
+      // Clear the input field
+      input.value = '';
+      input.placeholder = 'Enter new project title...';
     });
   } else {
     console.error('Add button or project input not found!');
   }
 };
-
-// TODO: Clear new project input field
 
 const renderProjectForm = () => {
   const form = document.createElement('div');

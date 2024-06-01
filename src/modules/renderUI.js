@@ -11,6 +11,21 @@ import {
   renderProjectForm,
 } from './newProjectForm';
 
+const createProjects = (array) => {
+  const links = document.querySelector('.links');
+
+  if (links) {
+    array.forEach((project) => {
+      const existingProjects = document.createElement('li');
+      existingProjects.classList.add('projects');
+      existingProjects.textContent = project;
+      links.appendChild(existingProjects);
+    });
+  } else {
+    console.error('Links element not found!');
+  }
+};
+
 function renderUI() {
   // Append rendered elements to DOM
   const content = document.getElementById('content');
@@ -30,6 +45,8 @@ function renderUI() {
   hamburgerMenu();
   addProjectBtn();
   closeProjectForm();
+
+  createProjects(projects);
 
   // Load placeholder projects from projects.js
   loadDefault();

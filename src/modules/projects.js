@@ -1,6 +1,6 @@
 console.log('projects connected!');
 
-const projects = [];
+const projects = ['Study', 'Shopping'];
 
 const addProject = (projectName) => {
   if (projectName) {
@@ -9,6 +9,21 @@ const addProject = (projectName) => {
     console.log('Current projects: ', projects);
   } else {
     console.error('Project name cannot be empty.');
+  }
+};
+
+const createProjects = (array) => {
+  const links = document.querySelector('.links');
+
+  if (links) {
+    array.forEach((project) => {
+      const existingProjects = document.createElement('li');
+      existingProjects.classList.add('projects');
+      existingProjects.textContent = project;
+      links.appendChild(existingProjects);
+    });
+  } else {
+    console.error('Links element not found!');
   }
 };
 
@@ -29,8 +44,6 @@ const defaultProject = newProject(
   'Priority',
   false
 );
-
-// const createProject = () => {};
 
 const loadDefault = () => {
   const todos = document.querySelector('.todos');
@@ -96,4 +109,4 @@ const loadDefault = () => {
   return todos;
 };
 
-export { projects, addProject, loadDefault };
+export { projects, createProjects, addProject, loadDefault };

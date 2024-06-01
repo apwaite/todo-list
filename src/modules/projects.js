@@ -12,20 +12,20 @@ const addProject = (projectName) => {
   }
 };
 
-const createProjects = (array) => {
-  const links = document.querySelector('.links');
+// const createProjects = (array) => {
+//   const links = document.querySelector('.links');
 
-  if (links) {
-    array.forEach((project) => {
-      const existingProjects = document.createElement('li');
-      existingProjects.classList.add('projects');
-      existingProjects.textContent = project;
-      links.appendChild(existingProjects);
-    });
-  } else {
-    console.error('Links element not found!');
-  }
-};
+//   if (links) {
+//     array.forEach((project) => {
+//       const existingProjects = document.createElement('li');
+//       existingProjects.classList.add('projects');
+//       existingProjects.textContent = project;
+//       links.appendChild(existingProjects);
+//     });
+//   } else {
+//     console.error('Links element not found!');
+//   }
+// };
 
 const newProject = (id, title, dueDate, completed, priority, remove) => ({
   id,

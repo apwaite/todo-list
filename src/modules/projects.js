@@ -109,4 +109,4 @@ const loadDefault = () => {
   return todos;
 };
 
-export { projects, createProjects, addProject, loadDefault };
+export { projects, addProject, loadDefault };

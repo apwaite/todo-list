@@ -1,7 +1,7 @@
 // TODO: import UI elements
 import { hamburgerMenu, renderHeader } from './header';
 import renderMain from './main';
-import { addNewProjectBtn, renderNav } from './nav';
+import { addNewProjectBtn, renderProjects, renderNav } from './nav';
 import renderTodos from './todos';
 import { projects, loadDefault } from './projects';
 import renderFooter from './footer';
@@ -11,20 +11,20 @@ import {
   renderProjectForm,
 } from './newProjectForm';
 
-const createProjects = (array) => {
-  const links = document.querySelector('.links');
+// const createProjects = (array) => {
+//   const links = document.querySelector('.links');
 
-  if (links) {
-    array.forEach((project) => {
-      const existingProjects = document.createElement('li');
-      existingProjects.classList.add('projects');
-      existingProjects.textContent = project;
-      links.appendChild(existingProjects);
-    });
-  } else {
-    console.error('Links element not found!');
-  }
-};
+//   if (links) {
+//     array.forEach((project) => {
+//       const existingProjects = document.createElement('li');
+//       existingProjects.classList.add('projects');
+//       existingProjects.textContent = project;
+//       links.appendChild(existingProjects);
+//     });
+//   } else {
+//     console.error('Links element not found!');
+//   }
+// };
 
 function renderUI() {
   // Append rendered elements to DOM
@@ -46,7 +46,7 @@ function renderUI() {
   addProjectBtn();
   closeProjectForm();
 
-  createProjects(projects);
+  renderProjects(projects);
 
   // Load placeholder projects from projects.js
   loadDefault();

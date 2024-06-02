@@ -1,5 +1,20 @@
 // import { defaultProject } from './projects';
 
+const renderProjects = (array) => {
+  const links = document.querySelector('.links');
+
+  if (links) {
+    array.forEach((project) => {
+      const existingProjects = document.createElement('li');
+      existingProjects.classList.add('projects');
+      existingProjects.textContent = project;
+      links.appendChild(existingProjects);
+    });
+  } else {
+    console.error('Links element not found!');
+  }
+};
+
 const addNewProjectBtn = () => {
   const addProject = document.querySelector('.add-new-project');
   const form = document.getElementById('form-overlay');
@@ -34,4 +49,4 @@ const renderNav = () => {
   return nav;
 };
 
-export { addNewProjectBtn, renderNav };
+export { addNewProjectBtn, renderProjects, renderNav };

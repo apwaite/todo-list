@@ -1,4 +1,4 @@
-import { addProject } from './projects';
+import { addProject, updateProjects } from './projects';
 
 const closeProjectForm = () => {
   const closeBtn = document.querySelector('.close-form');
@@ -28,6 +28,7 @@ const addProjectBtn = () => {
       // Clear the input field
       input.value = '';
       input.placeholder = 'Enter new project title...';
+      updateProjects();
     });
   } else {
     console.error('Add button or project input not found!');

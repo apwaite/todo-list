@@ -16,12 +16,12 @@ const updateProjects = () => {
   const links = document.querySelector('.links');
   if (links) {
     const [lastItem] = projects.slice(-1);
-    const updatedProjects = document.createElement('li');
-
-    updatedProjects.classList.add('projects');
-    updatedProjects.textContent = lastItem;
-
-    links.appendChild(updatedProjects);
+    const lastItemIndex = projects.length - 1;
+    const updateProject = document.createElement('li');
+    updateProject.classList.add('projects');
+    updateProject.dataset.id = lastItemIndex;
+    updateProject.textContent = lastItem;
+    links.appendChild(updateProject);
   } else {
     console.error('Links element not found!');
   }

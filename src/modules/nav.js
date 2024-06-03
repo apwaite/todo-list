@@ -4,10 +4,11 @@ const renderExistingProjects = (array) => {
   const links = document.querySelector('.links');
 
   if (links) {
-    array.forEach((project) => {
+    array.forEach((project, index) => {
       const existingProjects = document.createElement('li');
       existingProjects.classList.add('projects');
       existingProjects.textContent = project;
+      existingProjects.dataset.id = index;
       links.appendChild(existingProjects);
     });
   } else {

@@ -1,6 +1,6 @@
-// import { defaultProject } from './projects';
+// import { updateProjects } from './projects';
 
-const renderProjects = (array) => {
+const renderExistingProjects = (array) => {
   const links = document.querySelector('.links');
 
   if (links) {
@@ -49,4 +49,4 @@ const renderNav = () => {
   return nav;
 };
 
-export { addNewProjectBtn, renderProjects, renderNav };
+export { addNewProjectBtn, renderExistingProjects, renderNav };

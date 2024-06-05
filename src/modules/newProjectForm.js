@@ -16,6 +16,8 @@ const closeProjectForm = () => {
   }
 };
 
+// TODO: Add clear input button
+
 const addProjectBtn = () => {
   const addBtn = document.querySelector('.add-new-btn');
   const input = document.querySelector('.project-input');
@@ -29,6 +31,9 @@ const addProjectBtn = () => {
       input.value = '';
       input.placeholder = 'Enter new project title...';
       updateProjects();
+      // Toggle form overlay
+      const form = document.getElementById('form-overlay');
+      form.classList.toggle('show-overlay');
     });
   } else {
     console.error('Add button or project input not found!');

@@ -31,12 +31,13 @@ function renderUI() {
   addProjectBtn();
   closeProjectForm();
 
+  // Load placeholder projects from projects.js
   renderExistingProjects(projects);
 
-  // Load placeholder projects from projects.js
+  // Load placeholder todos from projects.js
   loadDefault();
 
-  // TOD: Load existing projects from localStorage
+  // TODO: Load existing projects from localStorage
 }
 
 export default renderUI;

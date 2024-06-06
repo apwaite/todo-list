@@ -202,13 +202,19 @@ li {
   color: var(--del-hover);
 }
 
-.add-new-btn {
+.button-container {
+  display: flex;
+  justify-content: flex-end;
   margin-top: 1rem;
+  gap: 1rem;
+}
+
+.add-new-btn,
+.clear-btn {
   font-size: 1rem;
   padding: 0.5rem;
   border-radius: 0.15rem;
-  width: 4rem;
-  outline: none;
+  cursor: pointer;
 }
 
 /* Main */

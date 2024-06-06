@@ -9,6 +9,7 @@ const closeProjectForm = () => {
     closeBtn.addEventListener('click', () => {
       console.log('Close new project button clicked!');
       form.classList.toggle('show-overlay');
+      input.value = '';
       input.placeholder = 'Enter new project title...';
     });
   } else {
@@ -17,6 +18,20 @@ const closeProjectForm = () => {
 };
 
 // TODO: Add clear input button
+const clearBtn = () => {
+  const clearInput = document.querySelector('.clear-btn');
+  const input = document.querySelector('.project-input');
+
+  if (clearInput && input) {
+    clearInput.addEventListener('click', () => {
+      console.log('Clear input field button clicked!');
+      input.value = '';
+      input.placeholder = 'Enter new project title...';
+    });
+  } else {
+    console.error('Clear button or input field not found!');
+  }
+};
 
 const addProjectBtn = () => {
   const addBtn = document.querySelector('.add-new-btn');
@@ -60,14 +75,23 @@ const renderProjectForm = () => {
   input.placeholder = 'Enter project title...';
   form.appendChild(input);
 
+  const btns = document.createElement('div');
+  btns.classList.add('button-container');
+  form.appendChild(btns);
+
+  const clearInputBtn = document.createElement('button');
+  clearInputBtn.classList.add('clear-btn');
+  clearInputBtn.textContent = 'Clear';
+  btns.appendChild(clearInputBtn);
+
   const addBtn = document.createElement('button');
   addBtn.classList.add('add-new-btn');
   addBtn.textContent = 'Add';
-  form.appendChild(addBtn);
+  btns.appendChild(addBtn);
 
   // TODO: Store contents of input in an array
 
   return form;
 };
 
-export { closeProjectForm, addProjectBtn, renderProjectForm };
+export { closeProjectForm, clearBtn, addProjectBtn, renderProjectForm };

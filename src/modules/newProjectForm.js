@@ -1,5 +1,11 @@
 import { addProject, updateProjects } from './projects';
 
+const clearInput = () => {
+  const input = document.querySelector('.project-input');
+  input.value = '';
+  input.placeholder = 'Enter new project title...';
+};
+
 const closeProjectForm = () => {
   const closeBtn = document.querySelector('.close-form');
   const form = document.getElementById('form-overlay');

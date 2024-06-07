@@ -19,11 +19,11 @@ const closeProjectForm = () => {
 
 // TODO: Add clear input button
 const clearBtn = () => {
-  const clearInput = document.querySelector('.clear-btn');
+  const clear = document.querySelector('.clear-btn');
   const input = document.querySelector('.project-input');
 
-  if (clearInput && input) {
-    clearInput.addEventListener('click', () => {
+  if (clear && input) {
+    clear.addEventListener('click', () => {
       console.log('Clear input field button clicked!');
       input.value = '';
       input.placeholder = 'Enter new project title...';
@@ -79,10 +79,10 @@ const renderProjectForm = () => {
   btns.classList.add('button-container');
   form.appendChild(btns);
 
-  const clearInputBtn = document.createElement('button');
-  clearInputBtn.classList.add('clear-btn');
-  clearInputBtn.textContent = 'Clear';
-  btns.appendChild(clearInputBtn);
+  const clearBtn = document.createElement('button');
+  clearBtn.classList.add('clear-btn');
+  clearBtn.textContent = 'Clear';
+  btns.appendChild(clearBtn);
 
   const addBtn = document.createElement('button');
   addBtn.classList.add('add-new-btn');

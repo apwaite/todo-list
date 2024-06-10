@@ -9,14 +9,15 @@ const clearInput = () => {
 const closeProjectForm = () => {
   const closeBtn = document.querySelector('.close-form');
   const form = document.getElementById('form-overlay');
-  const input = document.querySelector('.project-input');
+  // const input = document.querySelector('.project-input');
 
   if (closeBtn && form) {
     closeBtn.addEventListener('click', () => {
       console.log('Close new project button clicked!');
       form.classList.toggle('show-overlay');
-      input.value = '';
-      input.placeholder = 'Enter new project title...';
+      clearInput();
+      // input.value = '';
+      // input.placeholder = 'Enter new project title...';
     });
   } else {
     console.error('Close button or form not found!');
@@ -31,8 +32,9 @@ const clearBtn = () => {
   if (clear && input) {
     clear.addEventListener('click', () => {
       console.log('Clear input field button clicked!');
-      input.value = '';
-      input.placeholder = 'Enter new project title...';
+      clearInput();
+      // input.value = '';
+      // input.placeholder = 'Enter new project title...';
     });
   } else {
     console.error('Clear button or input field not found!');

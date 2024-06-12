@@ -9,15 +9,12 @@ const clearInput = () => {
 const closeProjectForm = () => {
   const closeBtn = document.querySelector('.close-form');
   const form = document.getElementById('form-overlay');
-  // const input = document.querySelector('.project-input');
 
   if (closeBtn && form) {
     closeBtn.addEventListener('click', () => {
       console.log('Close new project button clicked!');
       form.classList.toggle('show-overlay');
       clearInput();
-      // input.value = '';
-      // input.placeholder = 'Enter new project title...';
     });
   } else {
     console.error('Close button or form not found!');

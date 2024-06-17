@@ -76,29 +76,37 @@ ul {
   padding: 0;
 }
 
-.links {
+.default-projects {
   margin: 1rem;
 }
 
-li {
+.project-btn {
+  display: flex;
+  justify-content: space-between;
   color: var(--primary-font);
+  border: none;
+  background-color: var(--secondary-bg-color);
 }
 
-.exiting-projects {
-  transition: all 0.5s ease-in-out;
+button {
+  padding: 0.2rem 0.4rem;
+  cursor: pointer;
 }
 
-.existing-projects:hover {
+/* .existing-projects:hover {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   transform-origin: left;
   cursor: pointer;
-}
+} */
 
-.add-new-project {
-  font-weight: 400;
-  transition: all 0.5s ease-in-out;
+.new-project-btn {
+  display: flex;
+  font-weight: 600;
+  border: none;
+  color: var(--primary-font);
+  background-color: var(--secondary-bg-color);
 }
 
 .new-project {

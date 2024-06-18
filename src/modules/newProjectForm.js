@@ -22,7 +22,7 @@ const closeProjectForm = () => {
 };
 
 // TODO: Add clear input button
-const clearBtn = () => {
+const clearFormBtn = () => {
   const clear = document.querySelector('.clear-btn');
   const input = document.querySelector('.project-input');
 
@@ -99,4 +99,4 @@ const renderProjectForm = () => {
   return form;
 };
 
-export { closeProjectForm, clearBtn, addProjectBtn, renderProjectForm };
+export { closeProjectForm, clearFormBtn, addProjectBtn, renderProjectForm };

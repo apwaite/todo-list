@@ -1,23 +1,23 @@
 // import { updateProjects } from './projects';
 
 const renderExistingProjects = (array) => {
-  const links = document.querySelector('.links');
+  const defaultProjects = document.querySelector('.project-list');
 
-  if (links) {
+  if (defaultProjects) {
     array.forEach((project, index) => {
-      const existingProjects = document.createElement('li');
-      existingProjects.classList.add('projects');
+      const existingProjects = document.createElement('button');
+      existingProjects.classList.add('project-btn');
       existingProjects.textContent = project;
       existingProjects.dataset.id = index;
-      links.appendChild(existingProjects);
+      defaultProjects.appendChild(existingProjects);
     });
   } else {
-    console.error('Links element not found!');
+    console.error('defaultProjects element not found!');
   }
 };
 
 const addNewProjectBtn = () => {
-  const addProject = document.querySelector('.add-new-project');
+  const addProject = document.querySelector('.new-project-btn');
   const form = document.getElementById('form-overlay');
 
   if (addProject && form) {
@@ -33,19 +33,23 @@ const addNewProjectBtn = () => {
 const renderNav = () => {
   const nav = document.createElement('nav');
 
-  const links = document.createElement('ul');
-  links.classList.add('links');
-  nav.appendChild(links);
+  const defaultProjects = document.createElement('div');
+  defaultProjects.classList.add('default-projects');
+  nav.appendChild(defaultProjects);
 
   const projectsTitle = document.createElement('h2');
   projectsTitle.classList.add('projects-title');
   projectsTitle.textContent = 'Projects';
-  links.appendChild(projectsTitle);
+  nav.appendChild(projectsTitle);
 
-  const addNewProject = document.createElement('li');
-  addNewProject.classList.add('add-new-project');
+  const projectList = document.createElement('div');
+  projectList.classList.add('project-list');
+  nav.appendChild(projectList);
+
+  const addNewProject = document.createElement('button');
+  addNewProject.classList.add('new-project-btn');
   addNewProject.textContent = '+ Add New Project';
-  links.appendChild(addNewProject);
+  nav.appendChild(addNewProject);
 
   return nav;
 };

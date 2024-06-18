@@ -13,12 +13,13 @@ const addProject = (projectName) => {
 };
 
 const updateProjects = () => {
-  const links = document.querySelector('.links');
+  const links = document.querySelector('.project-list');
   if (links) {
+    // Store last item added to the array using destructuring
     const [lastItem] = projects.slice(-1);
     const lastItemIndex = projects.length - 1;
-    const updateProject = document.createElement('li');
-    updateProject.classList.add('projects');
+    const updateProject = document.createElement('button');
+    updateProject.classList.add('project-btn');
     updateProject.dataset.id = lastItemIndex;
     updateProject.textContent = lastItem;
     links.appendChild(updateProject);

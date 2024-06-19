@@ -3,18 +3,14 @@ console.log('projects connected!');
 const projects = ['Study', 'Shopping'];
 
 const addProject = (projectName) => {
-  if (projectName) {
-    projects.push(projectName);
-    console.log('Project added: ', projectName);
-    console.log('Current projects: ', projects);
-  } else {
-    console.error('Project name cannot be empty.');
-  }
+  projects.push(projectName);
+  console.log('Project added: ', projectName);
+  console.log('Current projects: ', projects);
 };
 
 const updateProjects = () => {
-  const links = document.querySelector('.project-list');
-  if (links) {
+  const projectList = document.querySelector('.project-list');
+  if (projectList) {
     // Store last item added to the array using destructuring
     const [lastItem] = projects.slice(-1);
     const lastItemIndex = projects.length - 1;
@@ -22,9 +18,9 @@ const updateProjects = () => {
     updateProject.classList.add('project-btn');
     updateProject.dataset.id = lastItemIndex;
     updateProject.textContent = lastItem;
-    links.appendChild(updateProject);
+    projectList.appendChild(updateProject);
   } else {
-    console.error('Links element not found!');
+    console.error('project-list element not found!');
   }
 };
 

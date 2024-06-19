@@ -46,11 +46,15 @@ const addProjectBtn = () => {
     addBtn.addEventListener('click', () => {
       // Take input value and trim any excess whitespace
       const projectName = input.value.trim();
-      addProject(projectName);
-      // Clear the input field
-      input.value = '';
-      input.placeholder = 'Enter new project title...';
-      updateProjects();
+      if (projectName) {
+        addProject(projectName);
+        // Clear the input field
+        input.value = '';
+        input.placeholder = 'Enter new project title...';
+        updateProjects();
+      } else {
+        console.error('Project name cannot be empty.');
+      }
       // Toggle form overlay
       const form = document.getElementById('form-overlay');
       form.classList.toggle('show-overlay');

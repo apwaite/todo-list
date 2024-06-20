@@ -7,7 +7,7 @@ import { projects, loadDefault } from './projects';
 import renderFooter from './footer';
 import {
   closeProjectForm,
-  clearBtn,
+  clearFormBtn,
   addProjectBtn,
   renderProjectForm,
 } from './newProjectForm';
@@ -29,7 +29,7 @@ function renderUI() {
   // Add event listeners
   addNewProjectBtn();
   hamburgerMenu();
-  clearBtn();
+  clearFormBtn();
   addProjectBtn();
   closeProjectForm();
 

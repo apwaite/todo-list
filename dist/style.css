@@ -113,7 +113,7 @@ button {
   display: flex;
 }
 
-.add-new-project-form {
+/* .add-new-project-form {
   display: flex;
   flex-direction: column;
   text-align: start;
@@ -135,6 +135,61 @@ button {
   transform-origin: left;
   font-weight: 900;
   cursor: pointer;
+} */
+
+/* Todos */
+
+.todos {
+  flex-grow: 1;
+  flex-direction: column;
+  background-color: var(--primary-bg-color);
+}
+
+.todo {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5rem;
+  align-content: center;
+  justify-content: space-evenly;
+  border: 1px solid var(--border-secondary);
+}
+
+.todo-title {
+  padding: 0.5rem;
+  margin: 0;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.todo-due-date {
+  padding: 0.5rem;
+}
+
+.todo-completed {
+  padding: 0.5rem;
+}
+
+.todo-priority {
+  padding: 0.5rem;
+}
+
+.todo-remove {
+  padding: 0.5rem;
+}
+
+.new-todo-btn {
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  color: var(--secondary-bg-color);
+  background-color: var(--primary-font);
+}
+
+.new-todo-btn:hover,
+.new-todo-btn:focus {
+  color: var(--del-hover);
 }
 
 /* New Project Overlay */
@@ -231,46 +286,6 @@ button {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-}
-
-.todos {
-  flex-grow: 1;
-  flex-direction: column;
-  background-color: var(--primary-bg-color);
-}
-
-.todo {
-  display: flex;
-  flex-direction: row;
-  margin: 0.5rem;
-  align-content: center;
-  justify-content: space-evenly;
-  border: 1px solid var(--border-secondary);
-}
-
-.todo-title {
-  padding: 0.5rem;
-  margin: 0;
-}
-
-.title {
-  font-weight: 600;
-}
-
-.todo-due-date {
-  padding: 0.5rem;
-}
-
-.todo-completed {
-  padding: 0.5rem;
-}
-
-.todo-priority {
-  padding: 0.5rem;
-}
-
-.todo-remove {
-  padding: 0.5rem;
 }
 
 /* Footer */

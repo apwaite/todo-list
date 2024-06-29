@@ -11,6 +11,7 @@ import {
   addProjectBtn,
   renderProjectForm,
 } from './newProjectForm';
+import renderTodoForm from './newTodoForm';
 
 function renderUI() {
   // Append rendered elements to DOM
@@ -25,6 +26,8 @@ function renderUI() {
 
   const form = document.getElementById('form-overlay');
   form.appendChild(renderProjectForm());
+
+  form.appendChild(renderTodoForm());
 
   // Add event listeners
   addNewProjectBtn();

@@ -224,7 +224,7 @@ button {
 
 /* New Project Form */
 
-.form {
+.project-form {
   display: flex;
   flex-direction: column;
   max-width: 100vw;
@@ -233,6 +233,28 @@ button {
   margin-right: auto;
   margin-left: auto;
 }
+
+.project-input {
+  width: 100%;
+}
+
+/* New Todo Form */
+
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  max-height: 100vh;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.todo-input {
+  width: 100%;
+}
+
+/* Universal Form */
 
 .form-styling {
   width: 25vh;
@@ -244,10 +266,6 @@ button {
   padding: 2rem;
   border-radius: 0.25rem;
   border: 2px solid var(--border-secondary);
-}
-
-.project-input {
-  width: 100%;
 }
 
 .close-form {

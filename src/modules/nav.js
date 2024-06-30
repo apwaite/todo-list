@@ -19,6 +19,7 @@ const renderExistingProjects = (array) => {
 const addNewProjectBtn = () => {
   const addProject = document.querySelector('.new-project-btn');
   const form = document.getElementById('form-overlay');
+  const projectForm = document.querySelector('.project-form');
   const todoForm = document.querySelector('.todo-form');
 
   if (addProject && form) {
@@ -26,6 +27,7 @@ const addNewProjectBtn = () => {
       console.log('Add new project button clicked!');
       form.classList.toggle('show-overlay');
       todoForm.style.display = 'none';
+      projectForm.style.display = 'flex';
     });
   } else {
     console.error('Add Project button or form not found!');

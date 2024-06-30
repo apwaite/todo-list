@@ -225,7 +225,7 @@ button {
 /* New Project Form */
 
 .project-form {
-  display: flex;
+  display: none;
   flex-direction: column;
   max-width: 100vw;
   max-height: 100vh;
@@ -241,7 +241,7 @@ button {
 /* New Todo Form */
 
 .todo-form {
-  display: flex;
+  display: none;
   flex-direction: column;
   max-width: 100vw;
   max-height: 100vh;

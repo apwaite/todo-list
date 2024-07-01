@@ -2,8 +2,8 @@
 import { hamburgerMenu, renderHeader } from './header';
 import renderMain from './main';
 import { addNewProjectBtn, renderExistingProjects, renderNav } from './nav';
-import renderTodos from './todos';
-import { projects, loadDefault } from './projects';
+import { addTodoBtn, renderTodos, loadDefault } from './todos';
+import { projects } from './projects';
 import renderFooter from './footer';
 import {
   closeProjectForm,
@@ -31,6 +31,7 @@ function renderUI() {
 
   // Add event listeners
   addNewProjectBtn();
+  addTodoBtn();
   hamburgerMenu();
   clearFormBtn();
   addProjectBtn();

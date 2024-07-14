@@ -11,7 +11,7 @@ import {
   addProjectBtn,
   renderProjectForm,
 } from './newProjectForm';
-import renderTodoForm from './newTodoForm';
+import { closeTodoForm, renderTodoForm } from './newTodoForm';
 
 function renderUI() {
   // Append rendered elements to DOM
@@ -30,12 +30,13 @@ function renderUI() {
   form.appendChild(renderTodoForm());
 
   // Add event listeners
-  addNewProjectBtn();
-  addTodoBtn();
   hamburgerMenu();
+  addNewProjectBtn();
   clearFormBtn();
   addProjectBtn();
   closeProjectForm();
+  addTodoBtn();
+  closeTodoForm();
 
   // Load placeholder projects from projects.js
   renderExistingProjects(projects);

@@ -12,7 +12,7 @@ const closeProjectForm = () => {
 
   if (closeBtn && form) {
     closeBtn.addEventListener('click', () => {
-      console.log('Close new project button clicked!');
+      console.log('Close new project form button clicked!');
       form.classList.toggle('show-overlay');
       clearInput();
     });

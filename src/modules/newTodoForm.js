@@ -1,3 +1,24 @@
+const clearInput = () => {
+  const input = document.querySelector('.todo-input');
+  input.value = '';
+  input.placeholder = 'Enter new todo title...';
+};
+
+const closeTodoForm = () => {
+  const closeBtn = document.querySelector('.close-todo-form');
+  const form = document.getElementById('form-overlay');
+
+  if (closeBtn && form) {
+    closeBtn.addEventListener('click', () => {
+      console.log('Close new todo form button clicked!');
+      form.classList.toggle('show-overlay');
+      clearInput();
+    });
+  } else {
+    console.error('Close button or form not found!');
+  }
+};
+
 const renderTodoForm = () => {
   const form = document.createElement('div');
   form.classList.add('todo-form', 'form-styling');
@@ -8,15 +29,20 @@ const renderTodoForm = () => {
   form.appendChild(title);
 
   const close = document.createElement('span');
-  close.classList.add('close-form');
+  close.classList.add('close-todo-form');
   close.textContent = 'x';
   form.appendChild(close);
 
-  const input = document.createElement('input');
-  input.classList.add('todo-input');
-  input.type = 'text';
-  input.placeholder = 'Enter project title...';
-  form.appendChild(input);
+  const todoTitle = document.createElement('input');
+  todoTitle.classList.add('todo-input');
+  todoTitle.type = 'text';
+  todoTitle.placeholder = 'Enter todo title...';
+  form.appendChild(todoTitle);
+
+  const todoDate = document.createElement('input');
+  todoDate.classList.add('todo-date');
+  todoDate.type = 'date';
+  form.appendChild(todoDate);
 
   const btns = document.createElement('div');
   btns.classList.add('button-container');
@@ -35,4 +61,4 @@ const renderTodoForm = () => {
   return form;
 };
 
-export default renderTodoForm;
+export { closeTodoForm, renderTodoForm };

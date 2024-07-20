@@ -44,6 +44,27 @@ const renderTodoForm = () => {
   todoDate.type = 'date';
   form.appendChild(todoDate);
 
+  const todoPriority = document.createElement('label');
+  todoPriority.htmlFor = 'priority-select';
+  form.appendChild(todoPriority);
+
+  const todoSelectPriority = document.createElement('select');
+  todoSelectPriority.name = 'priority';
+  todoSelectPriority.id = 'prioritySelect';
+  const priorityPlaceholder = document.createElement('option');
+  priorityPlaceholder.value = '';
+  priorityPlaceholder.text = 'Please choose an option';
+  todoSelectPriority.appendChild(priorityPlaceholder);
+  const lowPriority = document.createElement('option');
+  lowPriority.value = 'low';
+  lowPriority.text = 'Low';
+  todoSelectPriority.appendChild(lowPriority);
+  const highPriority = document.createElement('option');
+  highPriority.value = 'high';
+  highPriority.text = 'High';
+  todoSelectPriority.appendChild(highPriority);
+  form.appendChild(todoSelectPriority);
+
   const btns = document.createElement('div');
   btns.classList.add('button-container');
   form.appendChild(btns);

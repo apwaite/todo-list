@@ -20,7 +20,7 @@ const closeTodoForm = () => {
 };
 
 const renderTodoForm = () => {
-  const form = document.createElement('div');
+  const form = document.createElement('form');
   form.classList.add('todo-form', 'form-styling');
 
   const title = document.createElement('h3');
@@ -50,7 +50,7 @@ const renderTodoForm = () => {
 
   const todoSelectPriority = document.createElement('select');
   todoSelectPriority.name = 'priority';
-  todoSelectPriority.id = 'prioritySelect';
+  todoSelectPriority.id = 'priority-select';
   const priorityPlaceholder = document.createElement('option');
   priorityPlaceholder.value = '';
   priorityPlaceholder.text = 'Please choose an option';

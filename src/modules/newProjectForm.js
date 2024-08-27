@@ -65,7 +65,7 @@ const addProjectBtn = () => {
 };
 
 const renderProjectForm = () => {
-  const form = document.createElement('div');
+  const form = document.createElement('form');
   form.classList.add('project-form', 'form-styling');
 
   const title = document.createElement('h3');
